@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.set_page_config(page_title="About Tori", page_icon="👩🏽‍🎓")
+st.set_page_config(page_title="Patch Notes", page_icon="👩🏽‍🎓")
 
 # ---- Styling ----
 st.markdown("""
@@ -26,13 +26,13 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # ---- Page Title ----
-st.markdown('<div class="section-title">About the Graduate</div>', unsafe_allow_html=True)
+st.markdown('<div class="section-title">Graduate Patch Notes</div>', unsafe_allow_html=True)
 st.write("")
 
 # ---- Main Story ----
 st.markdown("""
 <div class="text-block">
-Tori’s journey into technology began long before college.
+Tori-Ana’s journey into technology began long before college.
 
 Growing up, she was introduced to computers by her father. Watching him work, build, 
 and speak passionately about technology sparked a deep curiosity. He not only showed 
@@ -40,7 +40,7 @@ her how computers worked, but also what was possible through innovation,
 entrepreneurship, and determination.
 
 Listening to him talk about pursuing his own companies and navigating the corporate world 
-inspired her to see technology not just as a skill — but as a pathway to impact.
+inspired her to see technology not just as a skill but as a pathway to impact.
 
 As that curiosity grew, so did her love for problem-solving, analytics, and understanding how 
 data shapes the world around us. That passion eventually led her to pursue a degree in 
@@ -65,4 +65,5 @@ Special acknowledgment to the man who first opened the computer and showed me wh
 """, unsafe_allow_html=True)
 
 st.write("")
+
 st.divider()
