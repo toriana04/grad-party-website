@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.set_page_config(page_title="Event Configuration", page_icon="📍")
+st.set_page_config(page_title="Event Deployment", page_icon="📍")
 
 # ---- Styling ----
 st.markdown("""
@@ -35,7 +35,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # ---- Page Title ----
-st.markdown('<div class="section-title">Event Configuration</div>', unsafe_allow_html=True)
+st.markdown('<div class="section-title">Event Deployment</div>', unsafe_allow_html=True)
 st.write("")
 
 # ---- Date & Time ----
@@ -43,8 +43,8 @@ st.markdown("""
 <div class="detail-box">
 <div class="detail-title">🗓 Installation Date & Time</div>
 <div class="detail-text">
-May XX, 2026<br>
-TBD PM – TBD PM
+May 17, 2026<br>
+4 PM – 8 PM
 </div>
 </div>
 """, unsafe_allow_html=True)
@@ -66,7 +66,7 @@ st.markdown("""
 <div class="detail-box">
 <div class="detail-title">🎉 Dress Code</div>
 <div class="detail-text">
-Snappy casual
+Casual
 </div>
 </div>
 """, unsafe_allow_html=True)
