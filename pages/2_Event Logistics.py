@@ -64,7 +64,7 @@ Charlotte, NC 28278
 # ---- Dress Code ----
 st.markdown("""
 <div class="detail-box">
-<div class="detail-title">🎉 Dress Code</div>
+<div class="detail-title">👖 Appearance Settings</div>
 <div class="detail-text">
 Casual
 </div>
