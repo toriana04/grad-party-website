@@ -43,7 +43,7 @@ st.markdown("""
 <div class="detail-box">
 <div class="detail-title">🗓 Installation Date & Time</div>
 <div class="detail-text">
-May 17, 2026<br>
+May 17th, 2026<br>
 4 PM – 8 PM
 </div>
 </div>
