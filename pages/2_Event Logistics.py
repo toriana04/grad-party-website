@@ -74,7 +74,7 @@ Casual
 # ---- Additional Info ----
 st.markdown("""
 <div class="detail-box">
-<div class="detail-title">💚 What to Expect</div>
+<div class="detail-title">💚 Expected Output</div>
 <div class="detail-text">
 • Food & Refreshments<br>
 • Music & Celebration<br>
