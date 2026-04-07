@@ -47,7 +47,7 @@ with st.form("guest_form"):
 
     st.markdown('<div class="form-box">', unsafe_allow_html=True)
 
-    name = st.text_input("Full Name")
+    name = st.text_input("Your Name")
 
     attending = st.radio(
         "Attendance Status",
@@ -55,8 +55,8 @@ with st.form("guest_form"):
     )
 
     guest_count = st.selectbox(
-        "Number of Guests (including yourself)",
-        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        "Number of Guests attending (including yourself)",
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
     )
 
     message = st.text_area("Leave a message for the graduate (optional)")
