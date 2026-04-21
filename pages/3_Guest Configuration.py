@@ -10,6 +10,44 @@ SUPABASE_KEY = st.secrets["SUPABASE_KEY"]
 supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 # ---- Styling ----
+/* ===== SIDEBAR BACKGROUND ===== */
+section[data-testid="stSidebar"] {
+    background: linear-gradient(180deg, #013220 0%, #046A38 100%);
+}
+
+/* ===== SIDEBAR TEXT ===== */
+section[data-testid="stSidebar"] * {
+    color: #FFFFFF !important;
+}
+
+/* ===== SIDEBAR TITLE ===== */
+section[data-testid="stSidebar"] h1,
+section[data-testid="stSidebar"] h2,
+section[data-testid="stSidebar"] h3 {
+    color: #B9975B !important;
+}
+
+/* ===== NAV LINKS (PAGES) ===== */
+section[data-testid="stSidebar"] a {
+    color: #FFFFFF !important;
+    font-weight: 500;
+}
+
+/* ===== HOVER EFFECT ===== */
+section[data-testid="stSidebar"] a:hover {
+    color: #B9975B !important;
+}
+
+/* ===== CURRENT PAGE (ACTIVE) ===== */
+section[data-testid="stSidebar"] a[aria-current="page"] {
+    color: #B9975B !important;
+    font-weight: 700;
+}
+
+/* ===== OPTIONAL: REMOVE TOP BORDER ===== */
+section[data-testid="stSidebar"] hr {
+    border-color: rgba(255,255,255,0.2);
+}
 st.markdown("""
 <style>
 
