@@ -28,10 +28,18 @@ html, body {
     border-radius: 14px;
     box-shadow: 0px 6px 20px rgba(0,0,0,0.4);
     margin-bottom: 25px;
+    color: #FFFFFF; /* 👈 KEY FIX */
 }
+
 .detail-title {
-    color: #B9975B;
+    font-size: 20px;
     font-weight: 600;
+    color: #B9975B;
+}
+
+.detail-text {
+    font-size: 18px;
+    color: #FFFFFF; /* 👈 ALSO IMPORTANT */
 }
 .note {
     text-align: center;
