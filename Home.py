@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.set_page_config(
-    page_title="Tori-Ana McNeil v20.26: Graduate Edition",
+    page_title="Tori-Ana McNeil v21.26: Graduate Edition",
     page_icon="🎓",
     layout="centered"
 )
