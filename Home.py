@@ -9,27 +9,18 @@ st.set_page_config(
 # ---- GLOBAL STYLE ----
 st.markdown("""
 <style>
-
-/* Background */
 .stApp {
-    background: linear-gradient(180deg, #F4F7F5 0%, #FFFFFF 100%);
+    background: linear-gradient(180deg, #013220 0%, #046A38 100%);
 }
-
-/* Text */
-html, body {
-    color: #1C1C1C;
+html, body, [class*="css"] {
+    color: #FFFFFF;
 }
-
-/* Hero */
 .hero-title {
     text-align: center;
     font-size: 60px;
     font-weight: 700;
-    color: #046A38;
-    margin-bottom: 5px;
+    color: #B9975B;
 }
-
-/* Gold accent */
 .gold-divider {
     height: 3px;
     width: 80px;
@@ -37,17 +28,11 @@ html, body {
     margin: 15px auto 25px auto;
     border-radius: 5px;
 }
-
-/* Version text */
 .version-text {
     text-align: center;
     font-family: monospace;
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 20px;
+    color: #dcdcdc;
 }
-
-/* Terminal */
 .terminal {
     background-color: #0f1117;
     color: #00ff9c;
@@ -57,30 +42,22 @@ html, body {
     margin: 20px auto;
     width: 80%;
 }
-
-/* Degree box */
 .degree-box {
     text-align: center;
-    background-color: #ffffff;
+    background-color: #0B3D2E;
     padding: 25px;
     border-radius: 14px;
-    box-shadow: 0px 6px 18px rgba(0,0,0,0.08);
+    box-shadow: 0px 6px 20px rgba(0,0,0,0.4);
     margin: 20px auto;
     width: 80%;
 }
-
-/* Footer */
 .footer-text {
     text-align: center;
-    font-size: 16px;
-    color: #555;
-    margin-top: 30px;
+    color: #dcdcdc;
 }
-
 </style>
 """, unsafe_allow_html=True)
 
-# ---- Content ----
 st.markdown('<div class="hero-title">System Update Complete</div>', unsafe_allow_html=True)
 st.markdown('<div class="gold-divider"></div>', unsafe_allow_html=True)
 
