@@ -54,27 +54,32 @@ input, textarea, select {
     border-radius: 8px !important;
 }
 
-/* 🔥 FIXED SUBMIT BUTTON */
+/* ===== BUTTON FIX ===== */
+div[data-testid="stFormSubmitButton"] {
+    display: flex;
+    justify-content: center;
+}
+
 div[data-testid="stFormSubmitButton"] button {
     background-color: #B9975B !important;
     color: #046A38 !important;
     font-weight: 700 !important;
     border-radius: 8px !important;
     border: none !important;
-    width: 60%;
-    height: 50px;
+
+    width: 70%;
+    height: 55px;
     font-size: 18px;
+
+    white-space: nowrap;       /* prevents line break */
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-/* FORCE INNER TEXT COLOR */
+/* Force inner text */
 div[data-testid="stFormSubmitButton"] button * {
     color: #046A38 !important;
-}
-
-/* CENTER BUTTON */
-div[data-testid="stFormSubmitButton"] {
-    display: flex;
-    justify-content: center;
+    white-space: nowrap;
 }
 
 /* Hover */
@@ -83,7 +88,7 @@ div[data-testid="stFormSubmitButton"] button:hover {
     color: #013220 !important;
 }
 
-/* Terminal box */
+/* Terminal */
 .terminal-box {
     background-color: #0f1117;
     color: #00ff9c;
@@ -94,7 +99,7 @@ div[data-testid="stFormSubmitButton"] button:hover {
     font-size: 14px;
 }
 
-/* SUCCESS MESSAGE */
+/* Success message */
 .success-box {
     background-color: #0B3D2E;
     color: #B9975B !important;
@@ -113,7 +118,7 @@ st.markdown('<h3>Guest Configuration</h3>', unsafe_allow_html=True)
 st.markdown('<h1>Initialize RSVP Protocol</h1>', unsafe_allow_html=True)
 st.markdown('<div class="gold-divider"></div>', unsafe_allow_html=True)
 
-# ---- Terminal Intro ----
+# ---- Terminal ----
 st.markdown("""
 <div class="terminal-box">
 > system.boot()<br>
@@ -123,7 +128,7 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-# ---- RSVP Form ----
+# ---- Form ----
 with st.form("guest_form"):
 
     name = st.text_input("User Identification (Name)")
