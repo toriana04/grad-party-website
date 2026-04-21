@@ -4,7 +4,7 @@ import streamlit as st
 st.set_page_config(page_title="System Update: Graduation v1.0", layout="centered")
 
 # Title
-st.markdown("<h1 style='text-align: center;'>🎓 System Update: Graduation v1.0</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center;'>🎓 System Update: Graduation v20.26</h1>", unsafe_allow_html=True)
 
 # Content
 st.markdown("""
