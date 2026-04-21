@@ -12,14 +12,9 @@ st.markdown("""
     background: linear-gradient(180deg, #013220 0%, #046A38 100%);
 }
 
-/* Text */
-html, body {
-    color: #FFFFFF;
-}
-
 /* Title */
 h1 {
-    color: #B9975B;
+    color: #B9975B !important;
     text-align: center;
 }
 
@@ -29,19 +24,24 @@ h1 {
     padding: 25px;
     border-radius: 14px;
     box-shadow: 0px 6px 20px rgba(0,0,0,0.4);
-    color: #FFFFFF;
+}
+
+/* FORCE all text inside card to be white */
+.content-box, .content-box p, .content-box span {
+    color: #FFFFFF !important;
     font-size: 18px;
     line-height: 1.7;
 }
 
-/* Progress Bar */
+/* Progress bar */
 div[data-testid="stProgressBar"] > div > div {
     background-color: #B9975B;
 }
 
 /* Subtle text */
 .subtle {
-    color: #dcdcdc;
+    color: #dcdcdc !important;
+    text-align: center;
 }
 
 </style>
@@ -63,7 +63,7 @@ Beyond the classroom, Tori gained hands-on experience through internships and pr
 This milestone represents more than the completion of multiple degrees. It marks the launch of a new chapter, one built on late nights, big ideas, and a slightly concerning number of open tabs. With a foundation in technology, a passion for finance, and a drive to make an impact, Tori is stepping forward ready to continue learning, building, and creating.
 
 Graduation is not the end of the journey. It is simply the next version.
-""", unsafe_allow_html=True)
+""")
 
 st.markdown('</div>', unsafe_allow_html=True)
 
