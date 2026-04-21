@@ -90,7 +90,7 @@ st.markdown('<div class="terminal-text">> awaiting user input...</div>', unsafe_
 st.markdown("""
 <div class="terminal-box">
 > system.boot()<br>
-> loading event: Graduation_v1.0<br>
+> loading event: Graduation_v20.26<br>
 > verifying guest access...<br>
 > status: ready ✔️
 </div>
