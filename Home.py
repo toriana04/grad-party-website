@@ -50,6 +50,7 @@ html, body, [class*="css"] {
     box-shadow: 0px 6px 20px rgba(0,0,0,0.4);
     margin: 20px auto;
     width: 80%;
+    color: #FFFFFF;   /* 👈 THIS FIXES IT */
 }
 .footer-text {
     text-align: center;
