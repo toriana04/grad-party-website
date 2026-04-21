@@ -18,18 +18,18 @@ st.markdown("""
     background: linear-gradient(180deg, #013220 0%, #046A38 100%);
 }
 
-/* FORCE base text white */
+/* Base text */
 html, body, label, span, p {
     color: #FFFFFF !important;
 }
 
-/* Headers (force gold) */
+/* Headers */
 h1, h2, h3 {
     color: #B9975B !important;
     text-align: center;
 }
 
-/* Gold divider */
+/* Divider */
 .gold-divider {
     height: 3px;
     width: 80px;
@@ -49,17 +49,29 @@ div[data-testid="stForm"] {
 /* Inputs */
 input, textarea, select {
     background-color: #013220 !important;
-    color: white !important;
+    color: #FFFFFF !important;
     border: 1px solid #B9975B !important;
     border-radius: 8px !important;
 }
 
-/* Button */
+/* BUTTON FIX (THIS IS THE KEY PART) */
 button[kind="primary"] {
     background-color: #B9975B !important;
+    color: #046A38 !important;   /* green text */
+    font-weight: 700 !important;
+    border-radius: 8px !important;
+    border: none !important;
+}
+
+/* Ensure inner text also green */
+button[kind="primary"] * {
+    color: #046A38 !important;
+}
+
+/* Hover */
+button[kind="primary"]:hover {
+    background-color: #d4b87a !important;
     color: #013220 !important;
-    font-weight: 600;
-    border-radius: 8px;
 }
 
 /* Terminal box */
@@ -73,12 +85,15 @@ button[kind="primary"] {
     font-size: 14px;
 }
 
-/* Success message */
-.success-text {
+/* SUCCESS MESSAGE FIX */
+.success-box {
+    background-color: #0B3D2E;
+    color: #B9975B !important;
+    padding: 15px;
+    border-radius: 10px;
     text-align: center;
-    color: #B9975B;
+    margin-top: 20px;
     font-weight: 600;
-    margin-top: 15px;
 }
 
 </style>
@@ -86,7 +101,6 @@ button[kind="primary"] {
 
 # ---- Headers ----
 st.markdown('<h3>Guest Configuration</h3>', unsafe_allow_html=True)
-
 st.markdown('<h1>Initialize RSVP Protocol</h1>', unsafe_allow_html=True)
 st.markdown('<div class="gold-divider"></div>', unsafe_allow_html=True)
 
@@ -128,6 +142,6 @@ with st.form("guest_form"):
         }).execute()
 
         st.markdown(
-            '<div class="success-text">Response successfully deployed 💚 Thank you!</div>',
+            '<div class="success-box">Response successfully deployed 💚 Thank you!</div>',
             unsafe_allow_html=True
         )
