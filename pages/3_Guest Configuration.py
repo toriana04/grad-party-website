@@ -54,22 +54,31 @@ input, textarea, select {
     border-radius: 8px !important;
 }
 
-/* BUTTON FIX (THIS IS THE KEY PART) */
-button[kind="primary"] {
+/* 🔥 FIXED SUBMIT BUTTON */
+div[data-testid="stFormSubmitButton"] button {
     background-color: #B9975B !important;
-    color: #046A38 !important;   /* green text */
+    color: #046A38 !important;
     font-weight: 700 !important;
     border-radius: 8px !important;
     border: none !important;
+    width: 60%;
+    height: 50px;
+    font-size: 18px;
 }
 
-/* Ensure inner text also green */
-button[kind="primary"] * {
+/* FORCE INNER TEXT COLOR */
+div[data-testid="stFormSubmitButton"] button * {
     color: #046A38 !important;
 }
 
+/* CENTER BUTTON */
+div[data-testid="stFormSubmitButton"] {
+    display: flex;
+    justify-content: center;
+}
+
 /* Hover */
-button[kind="primary"]:hover {
+div[data-testid="stFormSubmitButton"] button:hover {
     background-color: #d4b87a !important;
     color: #013220 !important;
 }
@@ -85,7 +94,7 @@ button[kind="primary"]:hover {
     font-size: 14px;
 }
 
-/* SUCCESS MESSAGE FIX */
+/* SUCCESS MESSAGE */
 .success-box {
     background-color: #0B3D2E;
     color: #B9975B !important;
