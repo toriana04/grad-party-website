@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.set_page_config(
-    page_title="Tori-Ana McNeil v21.26: Graduate Edition",
+    page_title="Tori-Ana McNeil v20.26: Graduate Edition",
     page_icon="🎓",
     layout="centered"
 )
@@ -78,7 +78,7 @@ st.markdown("""
 # ---- Hero Section ----
 st.markdown('<div class="hero-title">System Update Complete</div>', unsafe_allow_html=True)
 
-st.markdown('<div class="version-text">> Tori-Ana McNeil v22.26 successfully installed</div>', unsafe_allow_html=True)
+st.markdown('<div class="version-text">> Tori-Ana McNeil v20.26 successfully installed</div>', unsafe_allow_html=True)
 
 # ---- Fake Terminal Boot ----
 st.markdown("""
