@@ -72,7 +72,7 @@ Graduation is not the end of the journey. It is simply the next version.
 """, unsafe_allow_html=True)
 
 # ---- Status ----
-st.markdown("### Current Status:")
+st.markdown('<h3 style="color:#B9975B; text-align:center;">Current Status</h3>', unsafe_allow_html=True)
 st.progress(73)
 
 st.markdown("""
