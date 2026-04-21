@@ -1,69 +1,34 @@
 import streamlit as st
 
-st.set_page_config(page_title="Patch Notes", page_icon="👩🏽‍🎓")
+# Page config
+st.set_page_config(page_title="System Update: Graduation v1.0", layout="centered")
 
-# ---- Styling ----
+# Title
+st.markdown("<h1 style='text-align: center;'>🎓 System Update: Graduation v1.0</h1>", unsafe_allow_html=True)
+
+# Content
 st.markdown("""
-<style>
-.section-title {
-    color: #046A38;
-    font-size: 32px;
-    font-weight: 600;
-}
-.text-block {
-    font-size: 18px;
-    line-height: 1.7;
-}
-.highlight {
-    color: #B9975B;
-    font-weight: 600;
-}
-.dedication {
-    font-style: italic;
-    margin-top: 20px;
-}
-</style>
-""", unsafe_allow_html=True)
+<div style="font-size:18px; line-height:1.7;">
 
-# ---- Page Title ----
-st.markdown('<div class="section-title">Graduate Patch Notes</div>', unsafe_allow_html=True)
-st.write("")
+From an early age, Tori has always been drawn to computers, endlessly curious about how technology works and how it shapes the world around us. What started as simple exploration quickly turned into a full-blown passion, eventually pairing with a growing interest in finance and data-driven decision making. Somewhere along the way, “just messing around with computers” evolved into a clear mission: to use technology and data to understand complex problems and build meaningful, real-world solutions.
 
-# ---- Main Story ----
-st.markdown("""
-<div class="text-block">
-Tori-Ana’s journey into technology began long before college.
+Throughout her academic journey, Tori pursued this passion by earning a Bachelor of Science in Data Science, alongside a Bachelor of Science in Business Analytics and a Bachelor of Science in Management Information Systems, while also completing a minor in Artificial Intelligence. Yes, that is three degrees. No, she did not sleep. Her studies reflect a blend of technical skill, business strategy, and analytical thinking, allowing her to approach challenges from multiple angles at once. Graduating magna cum laude, she has demonstrated not only academic excellence, but also resilience, determination, and an impressive ability to survive on deadlines and determination alone.
 
-Growing up, she was introduced to computers by her father. Watching him work, build, 
-and speak passionately about technology sparked a deep curiosity. He not only showed 
-her how computers worked, but also what was possible through innovation, 
-entrepreneurship, and determination.
+Beyond the classroom, Tori gained hands-on experience through internships and projects focused on real-world applications of data and AI. She has built data-driven solutions, presented work to industry professionals, and developed a strong foundation in problem solving, communication, and innovation. Most notably, she designed and coded this entire website herself, because at this point, adding “full-stack developer for her own graduation” to the résumé felt appropriate.
 
-Listening to him talk about pursuing his own companies and navigating the corporate world 
-inspired her to see technology not just as a skill but as a pathway to impact.
+This milestone represents more than the completion of multiple degrees. It marks the launch of a new chapter, one built on late nights, big ideas, and a slightly concerning number of open tabs. With a foundation in technology, a passion for finance, and a drive to make an impact, Tori is stepping forward ready to continue learning, building, and creating.
 
-As that curiosity grew, so did her love for problem-solving, analytics, and understanding how 
-data shapes the world around us. That passion eventually led her to pursue a degree in 
-<span class="highlight">Data Science</span>, along with dual business degrees in 
-<span class="highlight">Management Information Systems</span> and 
-<span class="highlight">Business Analytics</span>, and a minor in 
-<span class="highlight">Artificial Intelligence</span>.
+Graduation is not the end of the journey. It is simply the next version.
 
-This milestone is not just the completion of academic programs — it is the continuation 
-of a foundation built at home, rooted in mentorship, ambition, and belief.
 </div>
 """, unsafe_allow_html=True)
 
-st.write("")
-st.divider()
+# Loading bar section
+st.markdown("### Current Status:")
 
-# ---- Dedication Section ----
+st.progress(73)
+
 st.markdown("""
-<div class="text-block dedication">
-Special acknowledgment to the man who first opened the computer and showed me what was possible.
-</div>
-""", unsafe_allow_html=True)
-
-st.write("")
-
-st.divider()
+**Loading adulthood… ███████░░░ 73%**  
+*Estimated time remaining: unknown. System performance may vary.* 😌
+""")
