@@ -103,7 +103,7 @@ div[data-testid="stFormSubmitButton"] button {
     font-weight: 700 !important;
     border-radius: 8px !important;
 
-    width: 70%;
+    width: 100%;
     height: 55px;
     font-size: 18px;
 
