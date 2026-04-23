@@ -83,12 +83,12 @@ input, textarea, select {
 
 /* ===== BUTTON (FINAL FIX) ===== */
 div[data-testid="stFormSubmitButton"] {
-    width: 200%;
+    width: 300%;
 }
 
 /* Button styling */
 div[data-testid="stFormSubmitButton"] button {
-    width: 200% !important;
+    width: 300% !important;
     height: 60px;
 
     background-color: #B9975B !important;
