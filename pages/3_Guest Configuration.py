@@ -173,7 +173,7 @@ with st.form("guest_form"):
 
     message = st.text_area("Optional Message to Graduate")
 
-    submitted = st.form_submit_button("Deploy Response")
+    submitted = st.form_submit_button("Deploy")
 
     if submitted:
         supabase.table("guest_configurations").insert({
