@@ -11,46 +11,36 @@ supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 # ---- Sidebar Header ----
 st.sidebar.markdown("""
-<h2 style='text-align:center;'>System Menu</h2>
-<p style='text-align:center; font-family:monospace;'>> select module</p>
+<div class="sidebar-header">
+    <h2>System Menu</h2>
+    <p>> select module</p>
+</div>
 """, unsafe_allow_html=True)
 
 # ---- Styling ----
 st.markdown("""
 <style>
 
-/* ===== SIDEBAR GOLD THEME ===== */
+/* ===== SIDEBAR GOLD ===== */
 section[data-testid="stSidebar"] {
     background: linear-gradient(180deg, #B9975B 0%, #d4b87a 100%);
 }
 
-/* Sidebar text = dark green */
 section[data-testid="stSidebar"] * {
     color: #013220 !important;
 }
 
-/* Sidebar headers */
-section[data-testid="stSidebar"] h1,
-section[data-testid="stSidebar"] h2,
-section[data-testid="stSidebar"] h3 {
-    color: #013220 !important;
+/* Move header to TOP */
+.sidebar-header {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
 }
 
-/* Sidebar links */
-section[data-testid="stSidebar"] a {
-    color: #013220 !important;
-    font-weight: 500;
-}
-
-/* Hover */
-section[data-testid="stSidebar"] a:hover {
-    color: #046A38 !important;
-}
-
-/* Active page */
-section[data-testid="stSidebar"] a[aria-current="page"] {
-    color: #046A38 !important;
-    font-weight: 700;
+/* Push nav down */
+section[data-testid="stSidebarNav"] {
+    margin-top: 100px;
 }
 
 /* ===== MAIN BACKGROUND ===== */
@@ -91,30 +81,37 @@ input, textarea, select {
     border: 1px solid #B9975B !important;
 }
 
-/* BUTTON */
+/* ===== BUTTON (FINAL FIX) ===== */
 div[data-testid="stFormSubmitButton"] {
-    display: flex;
-    justify-content: center;
+    width: 100%;
 }
 
+/* Button styling */
 div[data-testid="stFormSubmitButton"] button {
+    width: 100% !important;
+    height: 60px;
+
     background-color: #B9975B !important;
     color: #046A38 !important;
-    font-weight: 700 !important;
-    border-radius: 8px !important;
 
-    width: 100%;
-    height: 55px;
-    font-size: 18px;
+    font-size: 20px !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.5px;
+
+    border-radius: 10px !important;
+    border: none !important;
 
     white-space: nowrap;
 }
 
+/* Force inner text */
 div[data-testid="stFormSubmitButton"] button * {
+    font-size: 20px !important;
+    font-weight: 800 !important;
     color: #046A38 !important;
 }
 
-/* HOVER */
+/* Hover */
 div[data-testid="stFormSubmitButton"] button:hover {
     background-color: #d4b87a !important;
     color: #013220 !important;
