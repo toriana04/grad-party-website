@@ -3,11 +3,58 @@ import streamlit as st
 # ---- Page Config ----
 st.set_page_config(page_title="Patch Notes: Graduation v20.26", layout="centered")
 
+# ---- Sidebar Header (NOW POSITIONED AT TOP) ----
+st.sidebar.markdown("""
+<div class="sidebar-header">
+    <h2>System Menu</h2>
+    <p>> select module</p>
+</div>
+""", unsafe_allow_html=True)
+
 # ---- Styling ----
 st.markdown("""
 <style>
 
-/* Background */
+/* ===== SIDEBAR GOLD ===== */
+section[data-testid="stSidebar"] {
+    background: linear-gradient(180deg, #B9975B 0%, #d4b87a 100%);
+}
+
+/* Sidebar text */
+section[data-testid="stSidebar"] * {
+    color: #013220 !important;
+}
+
+/* Move header to TOP */
+.sidebar-header {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Push nav down */
+section[data-testid="stSidebarNav"] {
+    margin-top: 100px;
+}
+
+/* Sidebar links */
+section[data-testid="stSidebar"] a {
+    color: #013220 !important;
+}
+
+/* Active page */
+section[data-testid="stSidebar"] a[aria-current="page"] {
+    color: #046A38 !important;
+    font-weight: 700;
+}
+
+/* Hover */
+section[data-testid="stSidebar"] a:hover {
+    color: #046A38 !important;
+}
+
+/* ===== MAIN BACKGROUND ===== */
 .stApp {
     background: linear-gradient(180deg, #013220 0%, #046A38 100%);
 }
@@ -46,7 +93,7 @@ div[data-testid="stProgressBar"] > div > div {
 # ---- Title ----
 st.markdown("<h1>🎓 Patch Notes: Graduation v20.26</h1>", unsafe_allow_html=True)
 
-# ---- Content (ONE HTML BLOCK = FIX) ----
+# ---- Content ----
 st.markdown("""
 <div class="content-box">
 
