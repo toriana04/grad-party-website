@@ -10,89 +10,76 @@ SUPABASE_KEY = st.secrets["SUPABASE_KEY"]
 supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 # ---- Styling ----
-/* ===== SIDEBAR BACKGROUND ===== */
+st.markdown("""
+<style>
+
+/* ===== SIDEBAR ===== */
 section[data-testid="stSidebar"] {
     background: linear-gradient(180deg, #013220 0%, #046A38 100%);
 }
 
-/* ===== SIDEBAR TEXT ===== */
 section[data-testid="stSidebar"] * {
     color: #FFFFFF !important;
 }
 
-/* ===== SIDEBAR TITLE ===== */
 section[data-testid="stSidebar"] h1,
 section[data-testid="stSidebar"] h2,
 section[data-testid="stSidebar"] h3 {
     color: #B9975B !important;
 }
 
-/* ===== NAV LINKS (PAGES) ===== */
 section[data-testid="stSidebar"] a {
     color: #FFFFFF !important;
-    font-weight: 500;
 }
 
-/* ===== HOVER EFFECT ===== */
 section[data-testid="stSidebar"] a:hover {
     color: #B9975B !important;
 }
 
-/* ===== CURRENT PAGE (ACTIVE) ===== */
 section[data-testid="stSidebar"] a[aria-current="page"] {
     color: #B9975B !important;
     font-weight: 700;
 }
 
-/* ===== OPTIONAL: REMOVE TOP BORDER ===== */
-section[data-testid="stSidebar"] hr {
-    border-color: rgba(255,255,255,0.2);
-}
-st.markdown("""
-<style>
-
-/* Background */
+/* ===== MAIN BACKGROUND ===== */
 .stApp {
     background: linear-gradient(180deg, #013220 0%, #046A38 100%);
 }
 
-/* Base text */
+/* TEXT */
 html, body, label, span, p {
     color: #FFFFFF !important;
 }
 
-/* Headers */
+/* HEADERS */
 h1, h2, h3 {
     color: #B9975B !important;
     text-align: center;
 }
 
-/* Divider */
+/* DIVIDER */
 .gold-divider {
     height: 3px;
     width: 80px;
     background-color: #B9975B;
     margin: 10px auto 20px auto;
-    border-radius: 5px;
 }
 
-/* Form container */
+/* FORM */
 div[data-testid="stForm"] {
     background-color: #0B3D2E;
     padding: 30px;
     border-radius: 14px;
-    box-shadow: 0px 6px 20px rgba(0,0,0,0.4);
 }
 
-/* Inputs */
+/* INPUTS */
 input, textarea, select {
     background-color: #013220 !important;
     color: #FFFFFF !important;
     border: 1px solid #B9975B !important;
-    border-radius: 8px !important;
 }
 
-/* ===== BUTTON FIX ===== */
+/* BUTTON */
 div[data-testid="stFormSubmitButton"] {
     display: flex;
     justify-content: center;
@@ -103,49 +90,34 @@ div[data-testid="stFormSubmitButton"] button {
     color: #046A38 !important;
     font-weight: 700 !important;
     border-radius: 8px !important;
-    border: none !important;
 
-    width: 150%;
+    width: 70%;
     height: 55px;
     font-size: 18px;
 
-    white-space: nowrap;       /* prevents line break */
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-/* Force inner text */
-div[data-testid="stFormSubmitButton"] button * {
-    color: #046A38 !important;
     white-space: nowrap;
 }
 
-/* Hover */
-div[data-testid="stFormSubmitButton"] button:hover {
-    background-color: #d4b87a !important;
-    color: #013220 !important;
+div[data-testid="stFormSubmitButton"] button * {
+    color: #046A38 !important;
 }
 
-/* Terminal */
+/* TERMINAL */
 .terminal-box {
     background-color: #0f1117;
     color: #00ff9c;
     font-family: monospace;
     padding: 15px;
     border-radius: 10px;
-    margin-bottom: 25px;
-    font-size: 14px;
 }
 
-/* Success message */
+/* SUCCESS */
 .success-box {
     background-color: #0B3D2E;
     color: #B9975B !important;
     padding: 15px;
     border-radius: 10px;
     text-align: center;
-    margin-top: 20px;
-    font-weight: 600;
 }
 
 </style>
