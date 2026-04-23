@@ -9,35 +9,47 @@ SUPABASE_URL = st.secrets["SUPABASE_URL"]
 SUPABASE_KEY = st.secrets["SUPABASE_KEY"]
 supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
 
+# ---- Sidebar Header ----
+st.sidebar.markdown("""
+<h2 style='text-align:center;'>System Menu</h2>
+<p style='text-align:center; font-family:monospace;'>> select module</p>
+""", unsafe_allow_html=True)
+
 # ---- Styling ----
 st.markdown("""
 <style>
 
-/* ===== SIDEBAR ===== */
+/* ===== SIDEBAR GOLD THEME ===== */
 section[data-testid="stSidebar"] {
-    background: linear-gradient(180deg, #013220 0%, #046A38 100%);
+    background: linear-gradient(180deg, #B9975B 0%, #d4b87a 100%);
 }
 
+/* Sidebar text = dark green */
 section[data-testid="stSidebar"] * {
-    color: #FFFFFF !important;
+    color: #013220 !important;
 }
 
+/* Sidebar headers */
 section[data-testid="stSidebar"] h1,
 section[data-testid="stSidebar"] h2,
 section[data-testid="stSidebar"] h3 {
-    color: #B9975B !important;
+    color: #013220 !important;
 }
 
+/* Sidebar links */
 section[data-testid="stSidebar"] a {
-    color: #FFFFFF !important;
+    color: #013220 !important;
+    font-weight: 500;
 }
 
+/* Hover */
 section[data-testid="stSidebar"] a:hover {
-    color: #B9975B !important;
+    color: #046A38 !important;
 }
 
+/* Active page */
 section[data-testid="stSidebar"] a[aria-current="page"] {
-    color: #B9975B !important;
+    color: #046A38 !important;
     font-weight: 700;
 }
 
@@ -100,6 +112,12 @@ div[data-testid="stFormSubmitButton"] button {
 
 div[data-testid="stFormSubmitButton"] button * {
     color: #046A38 !important;
+}
+
+/* HOVER */
+div[data-testid="stFormSubmitButton"] button:hover {
+    background-color: #d4b87a !important;
+    color: #013220 !important;
 }
 
 /* TERMINAL */
