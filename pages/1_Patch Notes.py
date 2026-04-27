@@ -101,11 +101,11 @@ My interest in technology started with me spending hours on the computer playing
 
 <br><br>
 
-During high school, I earned a certificate in Information Technology from Central Piedmont Community College, which gave me a strong start and confirmed that this was the path I wanted to pursue. As a first generation college student, this journey has meant a lot, and it pushed me to figure things out, stay consistent, and keep going even when things were challenging.
+During high school, I graduated from Central Piedmont Community College with a Certificate in Information Technology, which gave me a strong start and confirmed that this was the path I wanted to pursue. As a first generation college student, this journey has meant a lot, and it pushed me to figure things out, stay consistent, and keep going even when things were challenging.
 
 <br><br>
 
-In college, I pursued degrees in Business Analytics, Management Information Systems, and Data Science, and added a minor in Artificial Intelligence my senior year. Along the way, I developed a variety of projects, attended conferences, presented my work to professionals, and completed internships that helped me apply what I was learning in real-world settings. This website is one of those projects and reflects both my technical skills and creativity.
+In college, I pursued three different Bachelors degrees in Business Analytics, Management Information Systems, and Data Science, and added a minor in Artificial Intelligence my senior year. Along the way, I developed a variety of projects, attended conferences, presented my work to professionals, and completed internships that helped me apply what I was learning in real-world settings. This website is one of those projects and reflects both my technical skills and creativity.
 
 <br><br>
 
