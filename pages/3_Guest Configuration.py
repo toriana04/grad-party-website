@@ -83,12 +83,12 @@ input, textarea, select {
 
 /* ===== BUTTON (FINAL FIX) ===== */
 div[data-testid="stFormSubmitButton"] {
-    width: 250%;
+    width: 1000%;
 }
 
 /* Button styling */
 div[data-testid="stFormSubmitButton"] button {
-    width: 250% !important;
+    width: 100% !important;
     height: 60px;
 
     background-color: #B9975B !important;
@@ -170,7 +170,7 @@ with st.form("guest_form"):
 
     message = st.text_area("Optional Message to Graduate")
 
-    submitted = st.form_submit_button("Initialize My Response")
+    submitted = st.form_submit_button("Initialize")
 
     if submitted:
         supabase.table("guest_configurations").insert({
