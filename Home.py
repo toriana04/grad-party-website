@@ -146,7 +146,7 @@ st.markdown("""
 <h3 style='margin-bottom:10px;'>SYSTEM NAVIGATION</h3>
 
 <p style='line-height:1.6;'>
-Use the menu to explore the system:
+Use the menu on the left to explore the system:
 </p>
 
 <p style='line-height:1.8;'>
