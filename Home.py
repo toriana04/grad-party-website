@@ -102,12 +102,13 @@ html, body, [class*="css"] {
     width: 80%;
 }
 
-/* DEGREE BOX */
+/* NAVIGATION BOX (replacing degree box) */
 .degree-box {
     text-align: center;
-    background-color: #0B3D2E;
+    background-color: rgba(11, 61, 46, 0.7);
     padding: 25px;
     border-radius: 14px;
+    border: 1px solid rgba(255,255,255,0.1);
     box-shadow: 0px 6px 20px rgba(0,0,0,0.4);
     margin: 20px auto;
     width: 80%;
@@ -139,15 +140,25 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-# ---- Degrees ----
+# ---- System Navigation ----
 st.markdown("""
 <div class="degree-box">
-<b>B.S. in Data Science</b><br>
-<b>B.S.B.A. in Management Information Systems</b><br>
-<b>B.S.B.A. in Business Analytics</b><br>
-Minor in Artificial Intelligence
+<h3 style='margin-bottom:10px;'>SYSTEM NAVIGATION</h3>
+
+<p style='line-height:1.6;'>
+Use the menu to explore the system:
+</p>
+
+<p style='line-height:1.8;'>
+📍 <b>Celebration Details</b> — view event time, location, and vibes<br>
+💌 <b>RSVP Protocol</b> — confirm your attendance
+</p>
+
+<p style='margin-top:15px; font-size:14px; opacity:0.7;'>
+P.S. This entire site was built by me 💅🏽
+</p>
 </div>
 """, unsafe_allow_html=True)
 
 # ---- Footer ----
-st.markdown('<div class="footer-text">Scroll through the menu to explore deployment details 💚</div>', unsafe_allow_html=True)
+st.markdown('<div class="footer-text">Navigate the system to access event details and RSVP 💚</div>', unsafe_allow_html=True)
