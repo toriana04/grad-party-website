@@ -150,8 +150,8 @@ Use the menu to explore the system:
 </p>
 
 <p style='line-height:1.8;'>
-📍 <b>Celebration Details</b> — view event time, location, and vibes<br>
-💌 <b>RSVP Protocol</b> — confirm your attendance
+📍 <b>Event Logistics</b> — view event time, location, and vibes<br>
+💌 <b>Guest Configuration</b> — confirm your attendance
 </p>
 
 <p style='margin-top:15px; font-size:14px; opacity:0.7;'>
