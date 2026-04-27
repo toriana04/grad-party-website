@@ -105,7 +105,7 @@ Throughout her academic journey, Tori-Ana pursued this passion by earning a Bach
 
 <br><br>
 
-Beyond the classroom, Tori-Ana gained hands-on experience through internships and projects focused on real-world applications of data and AI. She has built data-driven solutions, presented work to industry professionals, and developed a strong foundation in problem solving, communication, and innovation. Most notably, she designed and coded this entire website herself, because at this point, adding “full-stack developer for her own graduation” to the résumé felt appropriate.
+Beyond the classroom, Tori-Ana gained hands-on experience through internships and projects focused on real-world applications of data and AI. She has built data-driven solutions, presented work to industry professionals, and developed a strong foundation in problem solving, communication, and innovation. Most notably, she designed and coded this entire website herself, because at this point, adding “full-stack developer for her own graduation” to the resume felt appropriate.
 
 <br><br>
 
