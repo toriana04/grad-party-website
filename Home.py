@@ -150,8 +150,9 @@ Use the menu on the left to explore the system:
 </p>
 
 <p style='line-height:1.8;'>
+🗒️ <b>Patch Notes</b> — read my silly little story<br>
 📍 <b>Event Logistics</b> — view event time, location, and vibes<br>
-💌 <b>Guest Configuration</b> — confirm your attendance
+💌 <b>Guest Configuration</b> — rsvp form
 </p>
 
 <p style='margin-top:15px; font-size:14px; opacity:0.7;'>
