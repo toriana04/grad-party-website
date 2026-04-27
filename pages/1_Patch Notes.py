@@ -93,27 +93,23 @@ div[data-testid="stProgressBar"] > div > div {
 # ---- Title ----
 st.markdown("<h1>🎓 Patch Notes: Graduation v20.26</h1>", unsafe_allow_html=True)
 
-# ---- Content ----
+# ---- Content (UPDATED STORY) ----
 st.markdown("""
 <div class="content-box">
 
-From an early age, Tori-Ana has always been drawn to computers, endlessly curious about how technology works and how it shapes the world around us. What started as simple exploration quickly turned into a full-blown passion, eventually pairing with a growing interest in finance and data-driven decision making. Somewhere along the way, “just messing around with computers” evolved into a clear mission: to use technology and data to understand complex problems and build meaningful, real-world solutions.
+My interest in technology started with me spending hours on the computer playing games, and it grew when my dad showed me how everything connected behind the scenes. From there, I started taking computer classes in middle school and added business courses in high school, where I became interested in how technology, data, and decision making all work together.
 
 <br><br>
 
-Throughout her academic journey, Tori-Ana pursued this passion by earning a Bachelor of Science in Data Science, alongside a Bachelor of Science in Business Analytics and a Bachelor of Science in Management Information Systems, while also completing a minor in Artificial Intelligence. Yes, that is three degrees. No, she did not sleep. Her studies reflect a blend of technical skill, business strategy, and analytical thinking, allowing her to approach challenges from multiple angles at once. Graduating magna cum laude, she has demonstrated not only academic excellence, but also resilience, determination, and an impressive ability to survive on deadlines and determination alone.
+During high school, I earned a certificate in Information Technology from Central Piedmont Community College, which gave me a strong start and confirmed that this was the path I wanted to pursue. As a first generation college student, this journey has meant a lot, and it pushed me to figure things out, stay consistent, and keep going even when things were challenging.
 
 <br><br>
 
-Beyond the classroom, Tori-Ana gained hands-on experience through internships and projects focused on real-world applications of data and AI. She has built data-driven solutions, presented work to industry professionals, and developed a strong foundation in problem solving, communication, and innovation. Most notably, she designed and coded this entire website herself, because at this point, adding “full-stack developer for her own graduation” to the resume felt appropriate.
+In college, I pursued degrees in Business Analytics, Management Information Systems, and Data Science, and added a minor in Artificial Intelligence my senior year. Along the way, I developed a variety of projects, attended conferences, presented my work to professionals, and completed internships that helped me apply what I was learning in real-world settings. This website is one of those projects and reflects both my technical skills and creativity.
 
 <br><br>
 
-This milestone represents more than the completion of multiple degrees. It marks the launch of a new chapter, one built on late nights, big ideas, and a slightly concerning number of open tabs. With a foundation in technology, a passion for finance, and a drive to make an impact, Tori-Ana is stepping forward ready to continue learning, building, and creating.
-
-<br><br>
-
-Graduation is not the end of the journey. It is simply the next version.
+I will be graduating magna cum laude on May 8, 2026, and I am proud of everything this journey represents. This is just the beginning.
 
 </div>
 """, unsafe_allow_html=True)
